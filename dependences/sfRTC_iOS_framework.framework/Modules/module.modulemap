@@ -1,0 +1,6 @@
+framework module sfRTC_iOS_framework {
+  umbrella header "sfRTC_iOS_framework.h"
+
+  export *
+  module * { export * }
+}

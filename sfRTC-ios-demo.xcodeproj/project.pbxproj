@@ -1,0 +1,673 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C420CF922124A94500304B86 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C420CF912124A94500304B86 /* AppDelegate.m */; };
+		C420CF952124A94500304B86 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C420CF942124A94500304B86 /* ViewController.m */; };
+		C420CF982124A94500304B86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C420CF962124A94500304B86 /* Main.storyboard */; };
+		C420CF9B2124A94600304B86 /* sfRTC_ios_demo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C420CF992124A94600304B86 /* sfRTC_ios_demo.xcdatamodeld */; };
+		C420CF9D2124A95700304B86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C420CF9C2124A95700304B86 /* Assets.xcassets */; };
+		C420CFA02124A95700304B86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C420CF9E2124A95700304B86 /* LaunchScreen.storyboard */; };
+		C420CFA32124A95700304B86 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C420CFA22124A95700304B86 /* main.m */; };
+		C420CFAD2124A95800304B86 /* sfRTC_ios_demoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C420CFAC2124A95800304B86 /* sfRTC_ios_demoTests.m */; };
+		C420CFB82124A95800304B86 /* sfRTC_ios_demoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C420CFB72124A95800304B86 /* sfRTC_ios_demoUITests.m */; };
+		C42468412124E3D400A3254F /* ViewControllerCall.m in Sources */ = {isa = PBXBuildFile; fileRef = C42468402124E3D400A3254F /* ViewControllerCall.m */; };
+		C42468442124E3E700A3254F /* ViewControllerMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = C42468432124E3E700A3254F /* ViewControllerMessage.m */; };
+		C424685A2125061700A3254F /* sfRTC_iOS_framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C42468582125060F00A3254F /* sfRTC_iOS_framework.framework */; };
+		C424685B2125061700A3254F /* sfRTC_iOS_framework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C42468582125060F00A3254F /* sfRTC_iOS_framework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C46FE97B21261D2000E8ED14 /* SocketRocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C46FE97821261C1A00E8ED14 /* SocketRocket.framework */; };
+		C46FE97C21261D2000E8ED14 /* SocketRocket.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C46FE97821261C1A00E8ED14 /* SocketRocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C46FE97D21261D2000E8ED14 /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C46FE96F2125DD9A00E8ED14 /* WebRTC.framework */; };
+		C46FE97E21261D2000E8ED14 /* WebRTC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C46FE96F2125DD9A00E8ED14 /* WebRTC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C420CFA92124A95800304B86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C420CF852124A94500304B86 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C420CF8C2124A94500304B86;
+			remoteInfo = "sfRTC-ios-demo";
+		};
+		C420CFB42124A95800304B86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C420CF852124A94500304B86 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C420CF8C2124A94500304B86;
+			remoteInfo = "sfRTC-ios-demo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C424685C2125061800A3254F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				C424685B2125061700A3254F /* sfRTC_iOS_framework.framework in Embed Frameworks */,
+				C46FE97C21261D2000E8ED14 /* SocketRocket.framework in Embed Frameworks */,
+				C46FE97E21261D2000E8ED14 /* WebRTC.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		C420CF8D2124A94500304B86 /* sfRTC-ios-demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "sfRTC-ios-demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C420CF902124A94500304B86 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C420CF912124A94500304B86 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C420CF932124A94500304B86 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C420CF942124A94500304B86 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C420CF972124A94500304B86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C420CF9A2124A94600304B86 /* sfRTC_ios_demo.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = sfRTC_ios_demo.xcdatamodel; sourceTree = "<group>"; };
+		C420CF9C2124A95700304B86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C420CF9F2124A95700304B86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C420CFA12124A95700304B86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C420CFA22124A95700304B86 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C420CFA82124A95800304B86 /* sfRTC-ios-demoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "sfRTC-ios-demoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C420CFAC2124A95800304B86 /* sfRTC_ios_demoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sfRTC_ios_demoTests.m; sourceTree = "<group>"; };
+		C420CFAE2124A95800304B86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C420CFB32124A95800304B86 /* sfRTC-ios-demoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "sfRTC-ios-demoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C420CFB72124A95800304B86 /* sfRTC_ios_demoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = sfRTC_ios_demoUITests.m; sourceTree = "<group>"; };
+		C420CFB92124A95800304B86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C424683F2124E3D400A3254F /* ViewControllerCall.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerCall.h; sourceTree = "<group>"; };
+		C42468402124E3D400A3254F /* ViewControllerCall.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerCall.m; sourceTree = "<group>"; };
+		C42468422124E3E700A3254F /* ViewControllerMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerMessage.h; sourceTree = "<group>"; };
+		C42468432124E3E700A3254F /* ViewControllerMessage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerMessage.m; sourceTree = "<group>"; };
+		C42468582125060F00A3254F /* sfRTC_iOS_framework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = sfRTC_iOS_framework.framework; sourceTree = "<group>"; };
+		C46FE96F2125DD9A00E8ED14 /* WebRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WebRTC.framework; sourceTree = "<group>"; };
+		C46FE97821261C1A00E8ED14 /* SocketRocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SocketRocket.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C420CF8A2124A94500304B86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C424685A2125061700A3254F /* sfRTC_iOS_framework.framework in Frameworks */,
+				C46FE97B21261D2000E8ED14 /* SocketRocket.framework in Frameworks */,
+				C46FE97D21261D2000E8ED14 /* WebRTC.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C420CFA52124A95800304B86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C420CFB02124A95800304B86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C420CF842124A94500304B86 = {
+			isa = PBXGroup;
+			children = (
+				C424684B2124FFF400A3254F /* dependences */,
+				C420CF8F2124A94500304B86 /* sfRTC-ios-demo */,
+				C420CFAB2124A95800304B86 /* sfRTC-ios-demoTests */,
+				C420CFB62124A95800304B86 /* sfRTC-ios-demoUITests */,
+				C420CF8E2124A94500304B86 /* Products */,
+				C46FE97A21261C3300E8ED14 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		C420CF8E2124A94500304B86 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C420CF8D2124A94500304B86 /* sfRTC-ios-demo.app */,
+				C420CFA82124A95800304B86 /* sfRTC-ios-demoTests.xctest */,
+				C420CFB32124A95800304B86 /* sfRTC-ios-demoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C420CF8F2124A94500304B86 /* sfRTC-ios-demo */ = {
+			isa = PBXGroup;
+			children = (
+				C420CF902124A94500304B86 /* AppDelegate.h */,
+				C420CF912124A94500304B86 /* AppDelegate.m */,
+				C42468422124E3E700A3254F /* ViewControllerMessage.h */,
+				C42468432124E3E700A3254F /* ViewControllerMessage.m */,
+				C424683F2124E3D400A3254F /* ViewControllerCall.h */,
+				C42468402124E3D400A3254F /* ViewControllerCall.m */,
+				C420CF932124A94500304B86 /* ViewController.h */,
+				C420CF942124A94500304B86 /* ViewController.m */,
+				C420CF962124A94500304B86 /* Main.storyboard */,
+				C420CF9C2124A95700304B86 /* Assets.xcassets */,
+				C420CF9E2124A95700304B86 /* LaunchScreen.storyboard */,
+				C420CFA12124A95700304B86 /* Info.plist */,
+				C420CFA22124A95700304B86 /* main.m */,
+				C420CF992124A94600304B86 /* sfRTC_ios_demo.xcdatamodeld */,
+			);
+			path = "sfRTC-ios-demo";
+			sourceTree = "<group>";
+		};
+		C420CFAB2124A95800304B86 /* sfRTC-ios-demoTests */ = {
+			isa = PBXGroup;
+			children = (
+				C420CFAC2124A95800304B86 /* sfRTC_ios_demoTests.m */,
+				C420CFAE2124A95800304B86 /* Info.plist */,
+			);
+			path = "sfRTC-ios-demoTests";
+			sourceTree = "<group>";
+		};
+		C420CFB62124A95800304B86 /* sfRTC-ios-demoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C420CFB72124A95800304B86 /* sfRTC_ios_demoUITests.m */,
+				C420CFB92124A95800304B86 /* Info.plist */,
+			);
+			path = "sfRTC-ios-demoUITests";
+			sourceTree = "<group>";
+		};
+		C424684B2124FFF400A3254F /* dependences */ = {
+			isa = PBXGroup;
+			children = (
+				C46FE97821261C1A00E8ED14 /* SocketRocket.framework */,
+				C46FE96F2125DD9A00E8ED14 /* WebRTC.framework */,
+				C42468582125060F00A3254F /* sfRTC_iOS_framework.framework */,
+			);
+			path = dependences;
+			sourceTree = "<group>";
+		};
+		C46FE97A21261C3300E8ED14 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C420CF8C2124A94500304B86 /* sfRTC-ios-demo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C420CFBC2124A95800304B86 /* Build configuration list for PBXNativeTarget "sfRTC-ios-demo" */;
+			buildPhases = (
+				C420CF892124A94500304B86 /* Sources */,
+				C420CF8A2124A94500304B86 /* Frameworks */,
+				C420CF8B2124A94500304B86 /* Resources */,
+				C424685C2125061800A3254F /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "sfRTC-ios-demo";
+			productName = "sfRTC-ios-demo";
+			productReference = C420CF8D2124A94500304B86 /* sfRTC-ios-demo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C420CFA72124A95800304B86 /* sfRTC-ios-demoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C420CFBF2124A95800304B86 /* Build configuration list for PBXNativeTarget "sfRTC-ios-demoTests" */;
+			buildPhases = (
+				C420CFA42124A95800304B86 /* Sources */,
+				C420CFA52124A95800304B86 /* Frameworks */,
+				C420CFA62124A95800304B86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C420CFAA2124A95800304B86 /* PBXTargetDependency */,
+			);
+			name = "sfRTC-ios-demoTests";
+			productName = "sfRTC-ios-demoTests";
+			productReference = C420CFA82124A95800304B86 /* sfRTC-ios-demoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C420CFB22124A95800304B86 /* sfRTC-ios-demoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C420CFC22124A95800304B86 /* Build configuration list for PBXNativeTarget "sfRTC-ios-demoUITests" */;
+			buildPhases = (
+				C420CFAF2124A95800304B86 /* Sources */,
+				C420CFB02124A95800304B86 /* Frameworks */,
+				C420CFB12124A95800304B86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C420CFB52124A95800304B86 /* PBXTargetDependency */,
+			);
+			name = "sfRTC-ios-demoUITests";
+			productName = "sfRTC-ios-demoUITests";
+			productReference = C420CFB32124A95800304B86 /* sfRTC-ios-demoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C420CF852124A94500304B86 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Karina Betzabe Romero Ulloa";
+				TargetAttributes = {
+					C420CF8C2124A94500304B86 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					C420CFA72124A95800304B86 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = C420CF8C2124A94500304B86;
+					};
+					C420CFB22124A95800304B86 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = C420CF8C2124A94500304B86;
+					};
+				};
+			};
+			buildConfigurationList = C420CF882124A94500304B86 /* Build configuration list for PBXProject "sfRTC-ios-demo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C420CF842124A94500304B86;
+			productRefGroup = C420CF8E2124A94500304B86 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C420CF8C2124A94500304B86 /* sfRTC-ios-demo */,
+				C420CFA72124A95800304B86 /* sfRTC-ios-demoTests */,
+				C420CFB22124A95800304B86 /* sfRTC-ios-demoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C420CF8B2124A94500304B86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C420CFA02124A95700304B86 /* LaunchScreen.storyboard in Resources */,
+				C420CF9D2124A95700304B86 /* Assets.xcassets in Resources */,
+				C420CF982124A94500304B86 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C420CFA62124A95800304B86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C420CFB12124A95800304B86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C420CF892124A94500304B86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C42468442124E3E700A3254F /* ViewControllerMessage.m in Sources */,
+				C42468412124E3D400A3254F /* ViewControllerCall.m in Sources */,
+				C420CF952124A94500304B86 /* ViewController.m in Sources */,
+				C420CF9B2124A94600304B86 /* sfRTC_ios_demo.xcdatamodeld in Sources */,
+				C420CFA32124A95700304B86 /* main.m in Sources */,
+				C420CF922124A94500304B86 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C420CFA42124A95800304B86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C420CFAD2124A95800304B86 /* sfRTC_ios_demoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C420CFAF2124A95800304B86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C420CFB82124A95800304B86 /* sfRTC_ios_demoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C420CFAA2124A95800304B86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C420CF8C2124A94500304B86 /* sfRTC-ios-demo */;
+			targetProxy = C420CFA92124A95800304B86 /* PBXContainerItemProxy */;
+		};
+		C420CFB52124A95800304B86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C420CF8C2124A94500304B86 /* sfRTC-ios-demo */;
+			targetProxy = C420CFB42124A95800304B86 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C420CF962124A94500304B86 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C420CF972124A94500304B86 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C420CF9E2124A95700304B86 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C420CF9F2124A95700304B86 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C420CFBA2124A95800304B86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C420CFBB2124A95800304B86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C420CFBD2124A95800304B86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 569NDT2TU5;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/dependences",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "sfRTC-ios-demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.karinabru.sfRTC-ios-demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C420CFBE2124A95800304B86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 569NDT2TU5;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/dependences",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = "sfRTC-ios-demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.karinabru.sfRTC-ios-demo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C420CFC02124A95800304B86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 569NDT2TU5;
+				INFOPLIST_FILE = "sfRTC-ios-demoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.karinabru.sfRTC-ios-demoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sfRTC-ios-demo.app/sfRTC-ios-demo";
+			};
+			name = Debug;
+		};
+		C420CFC12124A95800304B86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 569NDT2TU5;
+				INFOPLIST_FILE = "sfRTC-ios-demoTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.karinabru.sfRTC-ios-demoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/sfRTC-ios-demo.app/sfRTC-ios-demo";
+			};
+			name = Release;
+		};
+		C420CFC32124A95800304B86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 569NDT2TU5;
+				INFOPLIST_FILE = "sfRTC-ios-demoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.karinabru.sfRTC-ios-demoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "sfRTC-ios-demo";
+			};
+			name = Debug;
+		};
+		C420CFC42124A95800304B86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 569NDT2TU5;
+				INFOPLIST_FILE = "sfRTC-ios-demoUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.karinabru.sfRTC-ios-demoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "sfRTC-ios-demo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C420CF882124A94500304B86 /* Build configuration list for PBXProject "sfRTC-ios-demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C420CFBA2124A95800304B86 /* Debug */,
+				C420CFBB2124A95800304B86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C420CFBC2124A95800304B86 /* Build configuration list for PBXNativeTarget "sfRTC-ios-demo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C420CFBD2124A95800304B86 /* Debug */,
+				C420CFBE2124A95800304B86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C420CFBF2124A95800304B86 /* Build configuration list for PBXNativeTarget "sfRTC-ios-demoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C420CFC02124A95800304B86 /* Debug */,
+				C420CFC12124A95800304B86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C420CFC22124A95800304B86 /* Build configuration list for PBXNativeTarget "sfRTC-ios-demoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C420CFC32124A95800304B86 /* Debug */,
+				C420CFC42124A95800304B86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C420CF992124A94600304B86 /* sfRTC_ios_demo.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C420CF9A2124A94600304B86 /* sfRTC_ios_demo.xcdatamodel */,
+			);
+			currentVersion = C420CF9A2124A94600304B86 /* sfRTC_ios_demo.xcdatamodel */;
+			path = sfRTC_ios_demo.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = C420CF852124A94500304B86 /* Project object */;
+}
