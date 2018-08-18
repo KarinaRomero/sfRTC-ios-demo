@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ViewControllerCall.h"
 
-@interface ViewControllerMessage : UIViewController
+@interface ViewControllerMessage : UIViewController <UITextFieldDelegate>
 @property (nonatomic, assign) NSString* message;
+@property (nonatomic) PeerConnectionClient* peerConnectionClient;
 @end

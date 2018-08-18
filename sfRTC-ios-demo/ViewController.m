@@ -10,8 +10,10 @@
 
 
 @interface ViewController ()
-@property (strong, nonatomic) IBOutlet UIButton *buttonSend;
-@property (strong, nonatomic) IBOutlet UITextField *textUserName;
+@property (strong, nonatomic) IBOutlet UIButton *btnLogin;
+
+@property (strong, nonatomic) IBOutlet UITextField *txtUserName;
+
 @property (nonatomic) NSString *loginName;
 @end
 
@@ -22,12 +24,12 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    _txtUserName.delegate = self;
     
 }
-- (IBAction)buttonSend:(id)sender {
-    _loginName= self.textUserName.text;
+- (IBAction)btnLogin:(id)sender {
+    _loginName= _txtUserName.text;
 }
-
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

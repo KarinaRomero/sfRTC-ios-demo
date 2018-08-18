@@ -18,12 +18,12 @@
 		C420CFB82124A95800304B86 /* sfRTC_ios_demoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C420CFB72124A95800304B86 /* sfRTC_ios_demoUITests.m */; };
 		C42468412124E3D400A3254F /* ViewControllerCall.m in Sources */ = {isa = PBXBuildFile; fileRef = C42468402124E3D400A3254F /* ViewControllerCall.m */; };
 		C42468442124E3E700A3254F /* ViewControllerMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = C42468432124E3E700A3254F /* ViewControllerMessage.m */; };
-		C424685A2125061700A3254F /* sfRTC_iOS_framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C42468582125060F00A3254F /* sfRTC_iOS_framework.framework */; };
-		C424685B2125061700A3254F /* sfRTC_iOS_framework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C42468582125060F00A3254F /* sfRTC_iOS_framework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C46FE97B21261D2000E8ED14 /* SocketRocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C46FE97821261C1A00E8ED14 /* SocketRocket.framework */; };
-		C46FE97C21261D2000E8ED14 /* SocketRocket.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C46FE97821261C1A00E8ED14 /* SocketRocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		C46FE97D21261D2000E8ED14 /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C46FE96F2125DD9A00E8ED14 /* WebRTC.framework */; };
-		C46FE97E21261D2000E8ED14 /* WebRTC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C46FE96F2125DD9A00E8ED14 /* WebRTC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C46FE9952126647400E8ED14 /* SocketRocket.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C46FE98E2126643400E8ED14 /* SocketRocket.framework */; };
+		C46FE9962126647400E8ED14 /* SocketRocket.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C46FE98E2126643400E8ED14 /* SocketRocket.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C46FE9972126647400E8ED14 /* WebRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C46FE98F2126643400E8ED14 /* WebRTC.framework */; };
+		C46FE9982126647400E8ED14 /* WebRTC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C46FE98F2126643400E8ED14 /* WebRTC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		C46FE99B2126656A00E8ED14 /* sfRTC_iOS_framework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C46FE9992126655C00E8ED14 /* sfRTC_iOS_framework.framework */; };
+		C46FE99C2126656A00E8ED14 /* sfRTC_iOS_framework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = C46FE9992126655C00E8ED14 /* sfRTC_iOS_framework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,9 +50,9 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				C424685B2125061700A3254F /* sfRTC_iOS_framework.framework in Embed Frameworks */,
-				C46FE97C21261D2000E8ED14 /* SocketRocket.framework in Embed Frameworks */,
-				C46FE97E21261D2000E8ED14 /* WebRTC.framework in Embed Frameworks */,
+				C46FE9962126647400E8ED14 /* SocketRocket.framework in Embed Frameworks */,
+				C46FE9982126647400E8ED14 /* WebRTC.framework in Embed Frameworks */,
+				C46FE99C2126656A00E8ED14 /* sfRTC_iOS_framework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -81,9 +81,9 @@
 		C42468402124E3D400A3254F /* ViewControllerCall.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerCall.m; sourceTree = "<group>"; };
 		C42468422124E3E700A3254F /* ViewControllerMessage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewControllerMessage.h; sourceTree = "<group>"; };
 		C42468432124E3E700A3254F /* ViewControllerMessage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewControllerMessage.m; sourceTree = "<group>"; };
-		C42468582125060F00A3254F /* sfRTC_iOS_framework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = sfRTC_iOS_framework.framework; sourceTree = "<group>"; };
-		C46FE96F2125DD9A00E8ED14 /* WebRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WebRTC.framework; sourceTree = "<group>"; };
-		C46FE97821261C1A00E8ED14 /* SocketRocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SocketRocket.framework; sourceTree = "<group>"; };
+		C46FE98E2126643400E8ED14 /* SocketRocket.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SocketRocket.framework; sourceTree = "<group>"; };
+		C46FE98F2126643400E8ED14 /* WebRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = WebRTC.framework; sourceTree = "<group>"; };
+		C46FE9992126655C00E8ED14 /* sfRTC_iOS_framework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = sfRTC_iOS_framework.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,9 +91,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C424685A2125061700A3254F /* sfRTC_iOS_framework.framework in Frameworks */,
-				C46FE97B21261D2000E8ED14 /* SocketRocket.framework in Frameworks */,
-				C46FE97D21261D2000E8ED14 /* WebRTC.framework in Frameworks */,
+				C46FE9952126647400E8ED14 /* SocketRocket.framework in Frameworks */,
+				C46FE9972126647400E8ED14 /* WebRTC.framework in Frameworks */,
+				C46FE99B2126656A00E8ED14 /* sfRTC_iOS_framework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -178,9 +178,9 @@
 		C424684B2124FFF400A3254F /* dependences */ = {
 			isa = PBXGroup;
 			children = (
-				C46FE97821261C1A00E8ED14 /* SocketRocket.framework */,
-				C46FE96F2125DD9A00E8ED14 /* WebRTC.framework */,
-				C42468582125060F00A3254F /* sfRTC_iOS_framework.framework */,
+				C46FE9992126655C00E8ED14 /* sfRTC_iOS_framework.framework */,
+				C46FE98E2126643400E8ED14 /* SocketRocket.framework */,
+				C46FE98F2126643400E8ED14 /* WebRTC.framework */,
 			);
 			path = dependences;
 			sourceTree = "<group>";

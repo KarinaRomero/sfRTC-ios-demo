@@ -9,6 +9,9 @@
 #import "ViewControllerMessage.h"
 
 @interface ViewControllerMessage ()
+@property (strong, nonatomic) IBOutlet UILabel *lblMessageReceived;
+@property (nonatomic) IBOutlet UITextField *txtMessageToSend;
+@property (strong, nonatomic) IBOutlet UIButton *btnSendMessage;
 
 @end
 
@@ -17,11 +20,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    _txtMessageToSend.delegate = self;
+    _lblMessageReceived.text = _message;
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+    
+}
+- (IBAction)actionBtnSendMessage:(id)sender {
+    [_peerConnectionClient sendMessageDataChannel:_txtMessageToSend.text];
 }
 
 
