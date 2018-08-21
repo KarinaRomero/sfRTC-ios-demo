@@ -85,6 +85,34 @@
         [videoTrack addRenderer:self.remoteView];
     }
 }
+
+- (void)didReceiveCall:(NSString *)callId {
+    UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Recibiendo llamada de:  "
+                                                                   message:callId
+                                                            preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"Answer" style:UIAlertActionStyleDefault
+                                                          handler:^(UIAlertAction * action) {
+                                                              [self->_peerConnectionClient answer];
+                                                          }];
+    
+    [alert addAction:defaultAction];
+    [self presentViewController:alert animated:YES completion:nil];
+}
+
+
+- (void)didRemoveRemoteStream:(NSString *)callId {
+    NSLog(@"%@", callId);
+    
+    self.remoteView = [[RTCEAGLVideoView alloc] initWithFrame:CGRectMake(0, 0, 0, 0)];
+    [self.view addSubview:self.remoteView];
+}
+
+
+- (void)didStatusChanged:(NSString *)status {
+    NSLog(@"%@", status);
+}
+
 #pragma mark - RTCEAGLVideoViewDelegate
 - (void)videoView:(nonnull RTCEAGLVideoView *)videoView didChangeVideoSize:(CGSize)size {
     
