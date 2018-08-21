@@ -65,7 +65,9 @@
     self.localStream = localVideoTrack;
     CGFloat width = [UIScreen mainScreen].bounds.size.width;
     CGFloat height = [UIScreen mainScreen].bounds.size.height;
-    self.localView = [[RTCEAGLVideoView alloc] initWithFrame:CGRectMake(width/2, height/2, width/2, height/2)];
+    
+    
+    self.localView = [[RTCEAGLVideoView alloc] initWithFrame:CGRectMake(0, height/3, width/2, height/3+100)];
     [self.view addSubview:self.localView];
     if (self.localStream.videoTracks.count > 0) {
         RTCVideoTrack *videoTrack = self.localStream.videoTracks.firstObject;
@@ -77,7 +79,7 @@
     self.remoteStream = remoteVideoTrack;
     CGFloat width = [UIScreen mainScreen].bounds.size.width;
     CGFloat height = [UIScreen mainScreen].bounds.size.height;
-    self.remoteView = [[RTCEAGLVideoView alloc] initWithFrame:CGRectMake(0, 0, width/2, height/2)];
+    self.remoteView = [[RTCEAGLVideoView alloc] initWithFrame:CGRectMake(width/2, height/3, width/2, height/3+100)];
     [self.view addSubview:self.remoteView];
     
     if (self.remoteStream.videoTracks.count > 0) {
