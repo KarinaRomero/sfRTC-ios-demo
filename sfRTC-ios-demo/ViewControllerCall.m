@@ -45,7 +45,7 @@
     // If user name is diferent of null create a new connection
     if(_userName){
         _lblUserConnected.text = _userName;
-        _url = @"ws://192.168.0.11:8888";
+        _url = @"ws://your.url.signaling";
         _peerConnectionClient =  [[PeerConnectionClient alloc] initWhitNameUrlVideoDelegateEnableDataChannel:_userName :_url: self: true];
         
     }else{
